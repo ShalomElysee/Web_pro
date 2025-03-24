@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+<!-- ✨ Scintillement -->
+<div class="sparkle-container"></div>
+
+<!-- 🚀 Hero Section -->
+<section class="hero">
+    <h1>Hi, I'm <span>Moukoumi Elysée</span></h1>
+    <h2>Full-Stack development student and Robotics enthusiast</h2>
+
+    <!-- 🏆 Navigation Buttons -->
+    <div class="hero-buttons">
+        <a href="#about" class="btn">About Me</a>
+        <a href="#education" class="btn">Education</a>
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#skills" class="btn">Skills</a>
+        <a href="#experience" class="btn">Experience</a>
+        <a href="#cv" class="btn">View My CV</a>
+        <a href="#contact" class="btn">Contact Me</a>
+        
+    </div>
+</section>
+
+
+<!-- 👨‍💻 About Me -->
+<section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Passionate about innovation and driven by impact, I enjoy designing and building solutions that connect people and technology.
+        With strong communication skills and a team-oriented mindset, I value collaboration as much as performance.
+        I’m constantly learning, whether through academic challenges, group projects or personal exploration.
+        My goal is to turn creative ideas into efficient systems that improve everyday life.
+      </p>
+    </div>
+  </section>
+  
+
+ 
+
+<!-- 🎓 Education -->
+<section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>Junia ISEN Lille – Engineering</strong> (2023 – 2025)</p>
+      <p>
+        Currently pursuing an engineering degree with a focus on embedded systems, algorithmic thinking and full-stack development.
+        This program blends advanced technical skills with project-based learning and teamwork.
+      </p>
+      <p><strong>Michel Montaigne High School, Gabon</strong> (2016 – 2022)</p>
+      <p>
+        A strong scientific foundation, with particular interest in mathematics and physics.
+        Participated in several science fairs and group initiatives.
+      </p>
+    </div>
+  </section>
+  
+  
+
+<!-- 🚀 Projects -->
+<section id="projects" class="section">
+    <div class="container">
+      <h2>My Projects</h2>
+  
+      <div class="projects-grid">
+  
+        <div class="project-card"
+          data-title="Smart Flower Pot"
+          data-description="The Smart Flower Pot project was initiated within the Crysteo robotics club. Through this experience, I explored how software can interact with real-world electronic components to meet practical needs. The system detects when the soil becomes too dry and displays the humidity level on a screen, allowing me to learn how to calibrate sensor thresholds for real-time responses. This project is still ongoing. Eventually, the flower pot will be fully built using 3D printing to house all the electronics in a compact and functional structure. Technologies used: ESP32-S2 MINI, YL-68 Humidity Sensor, TFT LCD 128x160 RGB Display, Arduino IDE, C++."
+          onmouseover="showDescription(this)">
+          <h3>Smart Flower Pot</h3>
+        </div>
+  
+        <div class="project-card"
+          data-title="Pathfinding AI"
+          data-description="This program implements a simplified version of pathfinding using the Floyd-Warshall algorithm to determine the shortest paths between multiple cities. It is an example of a classical artificial intelligence application in graph processing, developed in C++."
+          onmouseover="showDescription(this)">
+          <h3>Pathfinding AI</h3>
+        </div>
+  
+        <div class="project-card"
+          data-title="Traffic Light Simulation"
+          data-description="This simulation was inspired by real-world traffic systems used in smart cities. It was carried out as part of a group class project and aimed to simulate the behavior of an intersection. My teammate and I designed a sequential control model for traffic lights using C++. My main role was to synchronize the lights to ensure a consistent and smooth operation of the simulation."
+          onmouseover="showDescription(this)">
+          <h3>Traffic Light Simulation</h3>
+        </div>
+  
+      </div>
+  
+      <!-- Project Description -->
+      <div id="project-info" class="project-info">
+        <h3 id="project-title">Hover over a project</h3>
+        <p id="project-description">The description will appear here.</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- 🛠 Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>Hover over a skill to see more details.</p>
+  
+      <div class="skills-grid">
+        <div class="skill" data-title="Python"
+             data-description="Extensively used in object-oriented programming courses and robotics projects. Helped build strong logic and algorithmic foundations."
+             onmouseover="showSkillDescription(this)">
+          Python
+        </div>
+  
+        <div class="skill" data-title="C++"
+             data-description="Used in embedded systems and robotics projects to manage sensors and microcontrollers. Provided hands-on experience with low-level programming."
+             onmouseover="showSkillDescription(this)">
+          C++
+        </div>
+  
+        <div class="skill" data-title="JavaScript"
+             data-description="Used to create interactive web interfaces such as this portfolio, as well as during group projects to simulate real-world systems through structured frontend logic and user-centric design."
+             onmouseover="showSkillDescription(this)">
+          JavaScript
+        </div>
+  
+        <div class="skill" data-title="HTML & CSS"
+             data-description="Also learned during web programming classes and applied in real-world tasks including this portfolio. Helped design clean, responsive, and accessible interfaces."
+             onmouseover="showSkillDescription(this)">
+          HTML & CSS
+        </div>
+  
+        <div class="skill" data-title="Git & GitHub"
+             data-description="Used in group assignments to manage code versions, collaborate efficiently, and maintain project history. Familiar with branching and pull requests."
+             onmouseover="showSkillDescription(this)">
+          Git & GitHub
+        </div>
+  
+        <div class="skill" data-title="SQL"
+             data-description="Learned to handle databases for structured data management and simple queries, especially during backend and data modeling exercises."
+             onmouseover="showSkillDescription(this)">
+          SQL
+        </div>
+  
+        <div class="skill" data-title="Arduino"
+             data-description="Practiced in embedded systems to control microcontrollers (like ESP-32, Arduino UNO), like in the Smart Flower Pot project."
+             onmouseover="showSkillDescription(this)">
+          Arduino
+        </div>
+      </div>
+  
+      <!-- Skill Description Box -->
+      <div id="skill-info" class="skill-info">
+        <h3 id="skill-title">Hover over a skill</h3>
+        <p id="skill-description">The description will appear here.</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- 📜 Experience -->
+<section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+  
+      <div class="experience-item">
+        <h3>Intern – Trato TLV</h3>
+        <p>July – August 2023 | Roubaix, France</p>
+        <p>
+          Worked hands-on in the lighting systems department, assembling and testing electrical components.
+          Improved my teamwork, precision, and ability to apply technical standards in a professional environment.
+        </p>
+      </div>
+  
+      <div class="experience-item">
+        <h3>Class Representative – Junia ISEN Lille</h3>
+        <p>2023 – 2025</p>
+        <p>
+          Represented my class in academic and administrative discussions. This leadership role enhanced my communication skills and taught me how to mediate, organize, and lead collective initiatives effectively.
+        </p>
+      </div>
+  
+      <div class="experience-item">
+        <h3>Volunteer – Generation Elikya</h3>
+        <p>2022 – 2023</p>
+        <p>
+          Actively participated in youth-led community projects aimed at promoting education and local development.
+          Organized logistics and outreach campaigns, which helped me grow in planning and social responsibility.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+<!-- 📄 CV Section -->
+<section id="cv" class="section">
+    <h2>My Resume</h2>
+
+    <div class="hero-buttons">
+        <button class="btn cv-btn" onclick="toggleCV()">
+            View My CV
+        </button>
+    </div>
+
+    <!-- Conteneur où le CV s'affichera dynamiquement -->
+    <div id="cv-display" class="cv-display">
+        <iframe src="CV-Moukoumi-Elysee.pdf" class="cv-frame"></iframe>
+    </div>
+</section>
+   
+<!-- 📞 Contact Section -->
+<section id="contact" class="section">
+    <h2>Let's Connect</h2>
+    <p>Feel free to reach out via social media or email.</p>
+
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/elysee-moukoumi" target="_blank" class="contact-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/elyseeshalom_/" target="_blank" class="contact-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:elyseeshalom@gmail.com" class="contact-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Moukoumi Elysée – Portfolio</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
